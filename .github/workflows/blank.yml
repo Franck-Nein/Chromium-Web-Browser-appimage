@@ -1,14 +1,10 @@
 name: Release Chromium Appimage
-concurrency:
-  group: build-${{ github.ref }}
-  cancel-in-progress: true
-#
+
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
 
 jobs:
   build:
